@@ -1,0 +1,39 @@
+.container{
+    width:400px;
+    height: auto;
+    text-align: center;
+    background-color: #F5EFE6;
+    /* background-color: #C8DBBE; */
+    display:block;
+    margin:auto;
+    margin-top: 60px;
+    padding: 5px;
+}
+.container h3{
+    color:#FB2576;
+    font-size: 1.5em;
+}
+.inp{
+    padding: 8px;
+    margin: 3px 10px;
+    display: flex;
+    align-items: center;
+
+}
+#btn{
+    background-color:rgb(12, 240, 12);
+    border: orange;
+    border-radius: 5px;
+    color: white;
+    height:auto;
+    padding: 10px;
+
+}
+#btn1{
+    background-color:rgb(199, 98, 98);
+    border-radius: 5px;
+    color: white;
+    height:auto;
+    padding: 10px;
+    border: none;
+}

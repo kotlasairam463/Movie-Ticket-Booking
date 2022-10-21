@@ -1,0 +1,37 @@
+.navbar {
+    padding: 15px;
+    margin: 1px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    color: rgb(184, 35, 85);
+    background-color:#EDDBC0;
+}
+h1{
+    display: block;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 2em;
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(209, 66, 15);
+    font-size: 1.2em;
+    padding: 5px 20px;
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+}
+
+nav a:hover {
+    background-color:rgb(50, 50, 50);
+    color: white;
+    border-radius: 10px;
+}
+

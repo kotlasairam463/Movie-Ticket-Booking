@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup] = "loginform" (ngSubmit) = "onsubmit()">
+        <h3><b>Login Form</b></h3>
+        <div>
+        <label for="email" class=" inp">Email:</label>
+        <input type="text" placeholder="email" formControlName="email" class="inp"><br>
+        <label for="password" class="inp">Password:</label>
+        <input type="password" placeholder="password" formControlName="password" class="inp"><br>
+        <input type="submit" value="Login" id="btn" ></div>
+        <br>
+        <button (click)="navToRegister()" id="btn1">Don't have acount?click me</button>
+    </form>
+</div>

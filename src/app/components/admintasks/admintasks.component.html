@@ -1,0 +1,36 @@
+<div class="container ">
+    <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+  <div class="row row-cols-md-3 row-cols-lg-4  mb-4 p-5 ">
+    <div class="col" id="col">
+    <form [formGroup] = "addMovieForm" (ngSubmit) = "onSubmit()">
+    <h3><b>Add Movie</b></h3>
+    <label for="name" class="inp">Enter Movie Name</label>
+    <input type="text" placeholder="Title" formControlName="movie_name" class="inp"><br>
+    <label for="img_link" class="inp">Enter ImgUrl</label>
+    <input type="text" placeholder="ImgUrl" formControlName="img_link" class="inp"><br>
+    <label for="tickets" class="inp">Enter TotalTickets</label>
+    <input type="number" placeholder="Tickets" formControlName="ticketsavail" class="inp"><br>
+    <input type="submit" value="Add" id="btn" class="btn btn-success">
+    </form>
+    </div>
+    <div class="col" id="col">
+    <form [formGroup] = "editForm" (ngSubmit) = "onEdit()">
+        <h3><b>Edit Movie Ticket Details</b></h3>
+        <label for="name" class="inp">Enter Movie Name</label>
+        <input type="text" placeholder="Title" formControlName="movie_name" class="inp"><br>
+        <label for="tickets" class="inp">Enter Tickets to be Available</label>
+        <input type="number" placeholder="Tickets" formControlName="ticketsavail" class="inp"><br>
+        <input type="submit" value="Edit" id="btn" class="btn btn-success">
+    </form>
+    </div>
+    <div class="col" id="col">
+    <form [formGroup] = "deleteForm" (ngSubmit) = "onDelete()">
+        <h3><b>Delete Movie </b></h3>
+        <label for="name" class="inp">Enter Movie Name</label>
+        <input type="text" placeholder="Title" formControlName="movie_name" class="inp"><br>
+        <input type="submit" value="Delete" id="btn" class="btn btn-success">
+    </form>
+    </div>
+  </div>
+</div>
+
